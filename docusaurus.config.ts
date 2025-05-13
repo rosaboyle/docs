@@ -8,6 +8,16 @@ const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
+  plugins: [
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_EoMHKFbx6j2wUFsf8ywqgHntY4vEXC3ZzLFoPJVjRRT",
+        appUrl: "https://d18m0xvdtnkibr.cloudfront.net", // optional, defaults to "https://us.i.posthog.com"
+        enableInDevelopment: false, // optional
+      },
+    ],
+  ],
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
